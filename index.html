@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Source+Sans+Pro:400,600,700,900" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<title>FreeCodeCamp Survey Page</title>
+</head>
+<body>
+<header id="title">Survey Page</header>
+<img src="https://image.ibb.co/cVMi2A/tree.png">
+<div id="formbg">
+  <p id="description">This is going to be the description here going over what I learned in the project and what was used. Will edit this last</p>
+  <form id="survey-form">
+    <div class="grid">
+      <div id="gridleft">
+        <div class="labels">
+          <label id="name-label">Name:</label>
+        </div>
+      </div>
+      <div id="gridright">
+        <input autofocus type="text" name="name" id="name" placeholder="This is placeholder text" class="input-field" required></div>
+      <div id="gridleft">
+        <div class="labels">
+          <label id="email-label">Email:</label>
+        </div>
+      </div>
+      <div id="gridright">
+        <input autofocus type="email" id="email" placeholder="Joe@JoeMail.com" class="input-field" required></div>
+      <div id="gridleft">
+        <div class="labels">
+          <label id="number-label">Age:</label>
+        </div>
+      </div>
+      <div id="gridright">
+        <input autofocus type="number" id="number" min=0 max=300 placeholder="64" class="input-field" required></div>
+      <div id="gridleft">
+        <div class="labels">
+          <label for="currentexp">Current experience:</labels>
+      </div>
+    </div>
+    <div id="gridright">
+      <div class="labels">
+        <select id="dropdown" name="currentexp" class="dropdown">
+          <option disabled value>Length of Exp</option>
+          <option>1-3 Months</option>
+          <option>3-6 Months</option>
+          <option>6-12 Months</option>
+          <option>1-2 Years</option>
+          <option>3-5 Years</option>
+          <option>5-7 Years</option>
+          <option>7+ Years</options>
+        </select>
+    </div>
+  </div>
+      <div id="gridleft">
+        <div class="labels">
+          <label for="projectrating">How are your final projects going?</label>
+        </div>
+      </div>
+      <div class="gridright">
+        <ul style="list-style: none;">
+          <li class="radio">
+            <label>Going great!<input name="radio-buttons" value="1" type="radio" class="userRatings"></label></li>
+          <li class="radio">
+            <label>Slowly but surely!<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+          <li class="radio">
+            <label>Please send help!<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+      </div>
+      <div id="gridleft">
+        <div class="labels">
+          <label for="interests">What are your interests in programming?</label>
+        </div>
+      </div>
+      <div class="gridright">
+        <ul id="interests" style="list-style: none">
+          <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="interests">Software Development</label></li>
+          <li class="checkbox"><label><input name="prefer" value="2" type="checkbox" class="interests">Mobile Development</label></li>
+          <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="interests">Web Development</label></li>
+          <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="interests">Database Development</label></li>
+        </ul>
+      </div>
+      <div id="gridleft">
+        <div class="labels">
+          <label for="comments">What's your biggest programming accomplishment so far?</label>
+        </div>
+      </div>
+      <div class="gridright">
+        <textarea id="comments" class="input-field" style="height:65px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+      </div>
+      </div>
+    <div class="buttons-holder">
+        <button id="submit" type="submit">Submit</button>
+    </div>
+  </form>
+</div>
+<footer>
+  <p>Coded by <a href="https://codepen.io/mmarsden89/" target="_blank">Matt Marsden</a> for final FreeCodeCamp Responsive Web Design Certification</p>
+</footer>
+</body>
+</html>
